@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Apple Calculator</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="display">
+        <p id="current"></p>
+      </div>
+      <div id="button-rows">
+        <div class="row first">
+          <button onclick="clearDisplay()" id="ac">AC</button>
+          <button onclick="changeToOpposite()" id="opposite">+/-</button>
+          <button onclick="percentage()" id="percent">%</button>
+          <button onclick="operate(event)" id="divide">/</button>
+        </div>
+        <div class="row">
+          <button onclick="number(event);" id="seven">7</button>
+          <button onclick="number(event);" id="eight">8</button>
+          <button onclick="number(event);" id="nine">9</button>
+          <button onclick="operate(event)" id="multiply">*</button>
+        </div>
+        <div class="row">
+          <button onclick="number(event);" id="four">4</button>
+          <button onclick="number(event);" id="five">5</button>
+          <button onclick="number(event);" id="six">6</button>
+          <button onclick="operate(event)" id="subtract">-</button>
+        </div>
+        <div class="row">
+          <button onclick="number(event);" id="one">1</button>
+          <button onclick="number(event);" id="two">2</button>
+          <button onclick="number(event);" id="three">3</button>
+          <button onclick="operate(event)" id="add">+</button>
+        </div>
+        <div class="row">
+          <button onclick="number(event);" id="large-btn">0</button>
+          <button onclick="dot()" id="dot">.</button>
+          <button onclick="equalTo()" id="equal">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
